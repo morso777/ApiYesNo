@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6087" started-at="2019-08-20T12:21:40Z" finished-at="2019-08-20T12:21:46Z">
+  <suite name="Default suite" duration-ms="10992" started-at="2019-08-20T15:41:45Z" finished-at="2019-08-20T15:41:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6087" started-at="2019-08-20T12:21:40Z" finished-at="2019-08-20T12:21:46Z">
-      <class name="yesNoApi.ApiTesting">
-        <test-method status="PASS" signature="getbody()[pri:0, instance:yesNoApi.ApiTesting@1c62251]" name="getbody" duration-ms="5652" started-at="2019-08-20T12:21:40Z" finished-at="2019-08-20T12:21:46Z">
+    <test name="Default test" duration-ms="10992" started-at="2019-08-20T15:41:45Z" finished-at="2019-08-20T15:41:56Z">
+      <class name="api.ApiTesting">
+        <test-method status="PASS" signature="corto()[pri:0, instance:api.ApiTesting@1c62251]" name="corto" duration-ms="9623" started-at="2019-08-20T15:41:46Z" finished-at="2019-08-20T15:41:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- corto -->
+        <test-method status="PASS" signature="getbody()[pri:0, instance:api.ApiTesting@1c62251]" name="getbody" duration-ms="341" started-at="2019-08-20T15:41:55Z" finished-at="2019-08-20T15:41:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getbody -->
-        <test-method status="PASS" signature="testResponsecode()[pri:0, instance:yesNoApi.ApiTesting@1c62251]" name="testResponsecode" duration-ms="314" started-at="2019-08-20T12:21:46Z" finished-at="2019-08-20T12:21:46Z">
+        <test-method status="PASS" signature="largo()[pri:0, instance:api.ApiTesting@1c62251]" name="largo" duration-ms="371" started-at="2019-08-20T15:41:56Z" finished-at="2019-08-20T15:41:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- largo -->
+        <test-method status="PASS" signature="testResponsecode()[pri:0, instance:api.ApiTesting@1c62251]" name="testResponsecode" duration-ms="353" started-at="2019-08-20T15:41:56Z" finished-at="2019-08-20T15:41:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResponsecode -->
-      </class> <!-- yesNoApi.ApiTesting -->
+      </class> <!-- api.ApiTesting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

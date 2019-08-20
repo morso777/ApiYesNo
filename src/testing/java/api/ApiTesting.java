@@ -41,25 +41,22 @@ package api;
 		  
 		  String responseBody=response.getBody().asString();
 		  System.out.println("Response Body is:" +responseBody);
+		 }
 		
-		
-	/*	@Test
+		@Test
 		public void corto ()
 		{
-			Response resp =get("https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22");
-
-			//Response resp =RestAssured.get("https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22");
-			
+			Response resp =get("https://api.adviceslip.com/advice");					
 			String data=resp.asString();
 			System.out.println("Data is "+ data);
-			System.out.println("Response time short "+resp.getTime());
+			System.out.println("Response time long "+resp.getTime());
 		}
 		
 		@Test
 		public void largo ()
 		{
-			long time= get("https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22").getTime();
-			System.out.println("Response time long "+time);*/
+			long time= get("https://api.adviceslip.com/advice").getTime();
+			System.out.println("Response time short "+time);
 		}
 	}
 
