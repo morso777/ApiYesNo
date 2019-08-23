@@ -13,19 +13,6 @@ package api;
 	public class ApiTesting {
 
 		@Test
-		public void testResponsecode ()
-		{				
-			Response resp =get("https://api.adviceslip.com/advice");
-			int code=resp.getStatusCode();
-			System.out.println("Status code is "+code);
-			Assert.assertEquals(code, 200);
-				
-		    String statusLine=resp.getStatusLine();
-		    System.out.println("Status line is:"+statusLine);
-		    Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
-	    }
-		
-		@Test
 		 void getbody()
 		 {
 		  //Specify base URI
@@ -42,6 +29,22 @@ package api;
 		  String responseBody=response.getBody().asString();
 		  System.out.println("Response Body is:" +responseBody);
 		 }
+		
+		
+		@Test
+		public void testResponsecode ()
+		{				
+			Response resp =get("https://api.adviceslip.com/advice");
+			int code=resp.getStatusCode();
+			System.out.println("Status code is "+code);
+			Assert.assertEquals(code, 200);
+				
+		    String statusLine=resp.getStatusLine();
+		    System.out.println("Status line is:"+statusLine);
+		    Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
+	    }
+		
+		
 		
 		@Test
 		public void corto ()
