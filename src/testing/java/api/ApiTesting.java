@@ -16,13 +16,13 @@ package api;
 		 void getbody()
 		 {
 		  //Specify base URI
-		  RestAssured.baseURI="https://api.adviceslip.com";
+		  RestAssured.baseURI="http://5b847b30db24a100142dce1b.mockapi.io";
 		  
 		  //Request object
 		  RequestSpecification httpRequest=RestAssured.given();
 		  
 		  //Response object
-		  Response response=httpRequest.request(Method.GET,"/advice");
+		  Response response=httpRequest.request(Method.GET,"/api/v1/simulador");
 		  
 		  //print response in console window
 		  
@@ -34,7 +34,7 @@ package api;
 		@Test
 		public void testResponsecode ()
 		{				
-			Response resp =get("https://api.adviceslip.com/advice");
+			Response resp =get("http://5b847b30db24a100142dce1b.mockapi.io/api/v1/simulador");
 			int code=resp.getStatusCode();
 			System.out.println("Status code is "+code);
 			Assert.assertEquals(code, 200);
@@ -49,7 +49,7 @@ package api;
 		@Test
 		public void corto ()
 		{
-			Response resp =get("https://api.adviceslip.com/advice");					
+			Response resp =get("http://5b847b30db24a100142dce1b.mockapi.io/api/v1/simulador");					
 			String data=resp.asString();
 			System.out.println("Data is "+ data);
 			System.out.println("Response time long "+resp.getTime());
@@ -58,7 +58,7 @@ package api;
 		@Test
 		public void largo ()
 		{
-			long time= get("https://api.adviceslip.com/advice").getTime();
+			long time= get("http://5b847b30db24a100142dce1b.mockapi.io/api/v1/simulador").getTime();
 			System.out.println("Response time short "+time);
 		}
 	}
